@@ -1,6 +1,14 @@
 import React from 'react';
+// import Section from './Section';
 import Profile from './Profile'
 import user from '../jsons/user.json'
+
+import Statistics from './statistics/Statistics';
+import data from '../jsons/data.json'
+
+import FriendList from './friends/FriendList';
+import friends from '../jsons/friends.json'
+
 
 export default function App(){
     return (
@@ -12,8 +20,14 @@ export default function App(){
                avatar={user.avatar}
                stats={user.stats}
             />
+
+            <Statistics title="Upload stats" stats={data} />
+
+            <FriendList friends={friends} />
         </>
+
+        // <>
+        // <Statistics title="Upload stats" stats={data} />
+        // </>
     )
 }
-
-console.log(user);
