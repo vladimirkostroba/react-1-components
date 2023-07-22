@@ -34,7 +34,7 @@ function Profile({username,tag,location,avatar,stats}){
 }
 
 Profile.defaultProps = {
-    imgUrl:
+  avatar:
       'https://dummyimage.com/640x480/2a2a2a/ffffff&text=Product+image+placeholder',
   };
 
