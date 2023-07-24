@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './FriendList.module.css'
 
 function Friends({friends}){
 
@@ -8,7 +9,7 @@ function Friends({friends}){
                <ul className='friendList'>
        {friends.map(({id,isOnline,avatar,name}) => (
          <li className='item' id={id}>
-         <span className="status">{isOnline ? 'online' : 'ofline'}</span>
+         <span className={isOnline? styles.online : styles.ofline}>{isOnline ? 'online' : 'ofline'}</span>
          <img className="avatar" src={avatar} alt="User avatar" width="48" />
          <p className="name">{name}</p>
     </li> 

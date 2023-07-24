@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from './Section';
 
-import Profile from './Profile'
+import Profile from './profile/Profile'
 import user from '../jsons/user.json'
 
 import Statistics from './statistics/Statistics';

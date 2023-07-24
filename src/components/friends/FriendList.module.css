@@ -1,0 +1,14 @@
+.text{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.online{
+    composes:text;
+    color: blue;
+}
+
+.ofline{
+    composes:text;
+    color: red;
+}
